@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Go Grab Capture</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="go_grab_n_capture">Go Grab n Capture</string>
+    <string name="log_in">Log In</string>
+    <string name="todo">TODO</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="resend">Resend</string>
+    <string name="get_verified">GET VERIFIED</string>
+    <string name="send_code">SEND CODE</string>
+    <string name="name">Name</string>
+    <string name="submit_name">SUBMIT NAME</string>
+    <string name="signout">SignOut</string>
+</resources>
