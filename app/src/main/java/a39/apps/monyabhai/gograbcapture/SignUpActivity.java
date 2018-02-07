@@ -37,13 +37,13 @@ public class SignUpActivity extends AppCompatActivity {
         String mVerificationId;
         PhoneAuthProvider.ForceResendingToken mResendToken;
         PhoneAuthProvider.OnVerificationStateChangedCallbacks mCallbacks;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
         //Registering Views
-
         mAuth=FirebaseAuth.getInstance();
         phone_txt_layout=findViewById(R.id.txt_phone_layout);
         verify_txt_layout=findViewById(R.id.txt_verify_layout);
