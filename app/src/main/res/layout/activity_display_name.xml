@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context="a39.apps.monyabhai.gograbcapture.DisplayNameActivity">
 
+
+
     <include
         android:id="@+id/reg_appbar"
         layout="@layout/appbar_layout" />
@@ -29,12 +31,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/name"
-            android:inputType="textPersonName"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reg_appbar" />
+            android:inputType="textPersonName" />
     </android.support.design.widget.TextInputLayout>
 
     <Button
@@ -87,17 +84,23 @@
             android:inputType="date" />
     </android.support.design.widget.TextInputLayout>
 
-    <Spinner
-        android:id="@+id/city_spinner"
-        android:layout_width="0dp"
-        android:layout_height="31dp"
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:entries="@array/cities"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/city_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/city" />
+    </android.support.design.widget.TextInputLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -127,11 +127,13 @@ public class SignUpActivity extends AppCompatActivity {
                     FirebaseUser user = task.getResult().getUser();
                     if (user.getDisplayName()==null) {
                         Intent dispIntent=new Intent(SignUpActivity.this,DisplayNameActivity.class);
+                        dispIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(dispIntent);
                         finish();
                     }
                     else {
                         Intent homeIntent = new Intent(SignUpActivity.this, HomeActivity.class);
+                        homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(homeIntent);
                         finish();
                     }

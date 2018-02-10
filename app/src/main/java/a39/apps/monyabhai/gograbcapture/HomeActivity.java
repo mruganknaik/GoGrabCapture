@@ -39,7 +39,7 @@ public class HomeActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.signoutoption:
                 mAuth.signOut();
-                Intent LoginIntent=new Intent(HomeActivity.this,SignUpActivity.class);
+                Intent LoginIntent=new Intent(HomeActivity.this,MainActivity.class);
                 startActivity(LoginIntent);
                 finish();
         }
