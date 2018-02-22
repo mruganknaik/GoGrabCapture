@@ -10,7 +10,19 @@
         android:id="@+id/home_appbar"
         layout="@layout/appbar_layout" />
 
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_appbar">
+
+    </FrameLayout>
+
     <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_nav_bar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/primaryDarkColor"
@@ -22,4 +34,5 @@
         app:menu="@menu/nav_item">
 
     </android.support.design.widget.BottomNavigationView>
+
 </android.support.constraint.ConstraintLayout>
