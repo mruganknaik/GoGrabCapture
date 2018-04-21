@@ -42,9 +42,11 @@ public class ProductAdapter extends ArrayAdapter<Product> {
         title_text.setText(p.getTitle());
         city_text.setText(p.getCity());
         if (p.getPrice_day() == null) {
-            price_text.setText("₹"+p.getPrice_sell());
+            String price="₹"+p.getPrice_sell();
+            price_text.setText(price);
         } else {
-            price_text.setText("₹"+p.getPrice_day());
+            String price="₹"+p.getPrice_day();
+            price_text.setText(price);
         }
         return listViewItem;
 

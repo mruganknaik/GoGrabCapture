@@ -30,7 +30,8 @@ public class DiscoverFragment extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_discover, container, false);
         welcomemsg=view.findViewById(R.id.textView4);
-        welcomemsg.setText("Welcome " + user.getDisplayName() + ", What are you looking for..?");
+        String welcome_text="Welcome " + user.getDisplayName() + ", What are you looking for..?";
+        welcomemsg.setText(welcome_text);
         user.getDisplayName();
         gearlayout=view.findViewById(R.id.linear_gear);
         servicelayout=view.findViewById(R.id.linear_services);

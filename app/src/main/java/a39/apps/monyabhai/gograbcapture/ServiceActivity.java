@@ -87,12 +87,13 @@ public class ServiceActivity extends AppCompatActivity {
                 ser_obj =  dataSnapshot.getValue(Service.class);
                 getSupportActionBar().setTitle(ser_obj.getTitle());
                 if (ser_obj.getUid().equals(user.getUid())) {
-                    req_btn.setText("DELETE SERVICE");
+                    req_btn.setText(R.string.delete_ser);
                     req_btn.setBackgroundColor(SupportMenu.CATEGORY_MASK);
                 }
                 type.setText(ser_obj.getType());
                 city.setText(ser_obj.getCity());
-                price.setText("₹" + ser_obj.getPrice());
+                String price_str="₹" + ser_obj.getPrice();
+                price.setText(price_str);
                 decription.setText(ser_obj.getDescription());
                 uref = FirebaseDatabase.getInstance().getReference("Users/" + ser_obj.getUid() + "/");
                 uref.addListenerForSingleValueEvent(new ValueEventListener() {

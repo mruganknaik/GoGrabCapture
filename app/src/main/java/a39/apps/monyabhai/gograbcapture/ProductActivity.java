@@ -87,24 +87,26 @@ public class ProductActivity extends AppCompatActivity {
                 getSupportActionBar().setTitle(pdt_obj.getTitle());
 
                 if (pdt_obj.getUid().equals(user.getUid())) {
-                    req_btn.setText("DELETE PRODUCT");
+
+                    req_btn.setText(R.string.delete_pdt);
                     req_btn.setBackgroundColor(SupportMenu.CATEGORY_MASK);
                 }
                 type.setText(pdt_obj.getType());
                 brand.setText(pdt_obj.getBran());
                 model.setText(pdt_obj.getModel());
                 city.setText(pdt_obj.getCity());
-                String p_day = pdt_obj.getPrice_day();
-                if (p_day != null) {
-                    price_rent.setText("₹" + p_day);
+                String p_day = "₹" + pdt_obj.getPrice_day();
+                if (!(p_day.isEmpty())) {
+
+                    price_rent.setText(p_day);
                 } else {
                     price_rent.setText("-");
                 }
-                String p_sell = pdt_obj.getPrice_sell();
-                if (p_sell == null || price_sell.getText().toString().equals("")) {
+                String p_sell ="₹" + pdt_obj.getPrice_sell();
+                if (p_sell.isEmpty()) {
                     price_sell.setText("-");
                 } else {
-                    price_sell.setText("₹" + p_sell);
+                    price_sell.setText( p_sell);
                 }
                 decription.setText(pdt_obj.getDescription());
 

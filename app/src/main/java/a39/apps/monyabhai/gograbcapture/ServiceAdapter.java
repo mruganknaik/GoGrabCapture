@@ -40,7 +40,8 @@ public class ServiceAdapter extends ArrayAdapter<Service> {
         Glide.with(context).load(s.getI1()).into(img_pdt);
         title_text.setText(s.getTitle());
         city_text.setText(s.getCity());
-        price_text.setText("₹"+s.getPrice());
+        String price="₹"+s.getPrice();
+        price_text.setText(price);
         return listViewItem;
     }
 }

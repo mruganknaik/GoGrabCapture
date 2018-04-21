@@ -37,7 +37,8 @@ public class SearchResultActivity extends AppCompatActivity {
         this.pdtref.orderByChild("model").startAt(this.reference).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                SearchResultActivity.this.search_count.setText("Total " + dataSnapshot.getChildrenCount() + " Results Found");
+                String search_cnt="Total " + dataSnapshot.getChildrenCount() + " Results Found";
+                SearchResultActivity.this.search_count.setText(search_cnt);
                 SearchResultActivity.this.products.clear();
                 for (DataSnapshot ds : dataSnapshot.getChildren()) {
                     SearchResultActivity.this.products.add(ds.getValue(Product.class));

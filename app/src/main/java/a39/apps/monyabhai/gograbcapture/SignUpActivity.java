@@ -73,7 +73,8 @@ public class SignUpActivity extends AppCompatActivity {
                 mVerificationId = verificationId;
                 mResendToken = token;
                 btnType=1;
-                verify_btn.setText("GET VERIFIED");
+
+                verify_btn.setText(R.string.get_verified);
                 verify_btn.setEnabled(true);
                 verify_txt.setEnabled(true);
                 progress.setVisibility(View.INVISIBLE);

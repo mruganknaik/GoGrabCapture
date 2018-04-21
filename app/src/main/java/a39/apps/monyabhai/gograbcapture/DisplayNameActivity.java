@@ -128,7 +128,8 @@ public class DisplayNameActivity extends AppCompatActivity {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month=month+1;
-                txt_dob.setText(day+"/"+month+"/"+year);
+                String date=day+"/"+month+"/"+year;
+                txt_dob.setText(date);
             }
         };
 
