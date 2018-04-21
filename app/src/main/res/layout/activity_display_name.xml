@@ -1,46 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="a39.apps.monyabhai.gograbcapture.DisplayNameActivity">
-
-
-
+    android:layout_height="match_parent">
     <include
         android:id="@+id/reg_appbar"
         layout="@layout/appbar_layout" />
 
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout3"
+    <EditText
+        android:id="@+id/name_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:layout_weight="1.0"
+        android:background="@layout/txt_shape"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:maxLength="20"
+        android:padding="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_appbar">
+        app:layout_constraintTop_toBottomOf="@+id/profile_img" />
 
-        <EditText
-            android:id="@+id/name_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/name"
-            android:inputType="textPersonName" />
-    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1.0"
+        android:background="@layout/txt_shape"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="true"
+        android:hint="@string/date_of_birth"
+        android:padding="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt" />
+
+
+    <Spinner
+        android:id="@+id/city_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1.0"
+        android:background="@layout/txt_shape"
+        android:entries="@array/cities"
+        android:hint="@string/city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_txt" />
+
 
     <Button
         android:id="@+id/submit_name_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
         android:backgroundTint="@color/primaryColor"
         android:paddingLeft="32dp"
         android:paddingRight="32dp"
@@ -51,7 +83,6 @@
 
     <ProgressBar
         android:id="@+id/progress_name"
-        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -62,45 +93,16 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/secondaryLightColor"
+        android:contentDescription="@string/todo"
+        android:padding="5dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
-
-        <EditText
-            android:id="@+id/date_txt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/date_of_birth"
-            android:inputType="date" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
-
-        <AutoCompleteTextView
-            android:id="@+id/city_txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:hint="@string/city" />
-    </android.support.design.widget.TextInputLayout>
-
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reg_appbar"
+        app:srcCompat="@drawable/default_avatar" />
 </android.support.constraint.ConstraintLayout>

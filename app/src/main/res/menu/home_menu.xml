@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item
-        android:id="@+id/notifoption"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/notifications"
-        app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/signoutoption"
-        android:title="@string/signout" />
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/editprofile_option" android:title="@string/edit_profile" />
+    <item android:id="@+id/signoutoption" android:title="@string/signout" />
 </menu>

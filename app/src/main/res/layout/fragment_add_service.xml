@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraint_layout_add_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/title_add_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@layout/txt_shape"
+                android:ems="10"
+                android:hint="@string/title"
+                android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
+                android:padding="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/city_spn_add_service" />
+
+            <EditText
+                android:id="@+id/desc_add_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@layout/txt_shape"
+                android:ems="10"
+                android:hint="@string/description"
+                android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
+                android:padding="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_add_service" />
+
+            <Spinner
+                android:id="@+id/type_aspn_add_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@layout/txt_shape"
+                android:entries="@array/service_type"
+                android:padding="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/type"
+                android:layout_marginStart="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/city"
+                android:layout_marginStart="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/type_aspn_add_service" />
+
+            <Spinner
+                android:id="@+id/city_spn_add_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:background="@layout/txt_shape"
+                android:entries="@array/cities"
+                android:padding="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <EditText
+                android:id="@+id/price_add_service"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@layout/txt_shape"
+                android:ems="10"
+                android:hint="@string/price"
+                android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                android:padding="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/desc_add_service" />
+
+            <EditText
+                android:id="@+id/experience_add_services"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:background="@layout/txt_shape"
+                android:ems="10"
+                android:hint="@string/expeience_in_years"
+                android:inputType="textCapWords|number|numberSigned|numberDecimal|numberPassword|phone"
+                android:padding="10dp"
+                android:paddingEnd="20dp"
+                android:paddingStart="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price_add_service" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/experience_add_services">
+
+                <ImageView
+                    android:id="@+id/img1_add_service"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1.0"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/photography" />
+
+                <ImageView
+                    android:id="@+id/img2_add_service"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1.0"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/photography" />
+
+                <ImageView
+                    android:id="@+id/img3_add_service"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1.0"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/photography" />
+
+                <ImageView
+                    android:id="@+id/img4_add_service"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1.0"
+                    android:contentDescription="@string/todo"
+                    android:padding="5dp"
+                    android:src="@drawable/photography" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_btn_add_aervices"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/secondaryColor"
+                android:text="@string/add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+            <ProgressBar
+                android:id="@+id/add_service_progress"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

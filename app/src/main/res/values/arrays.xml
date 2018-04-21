@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="brands">
+        <item>Camera</item>
+        <item>Lens</item>
+        <item>Storage</item>
+        <item>Flash</item>
+        <item>Audio</item>
+    </array>
+    <array name="brands_audio">
+        <item>Rode</item>
+        <item>Zoom</item>
+        <item>Senheiser</item>
+        <item>Peavey</item>
+    </array>
+    <array name="brands_audio_sort">
+        <item>All</item>
+        <item>Rode</item>
+        <item>Zoom</item>
+        <item>Senheiser</item>
+        <item>Peavey</item>
+    </array>
+    <array name="brands_cam">
+        <item>Canon</item>
+        <item>Nikon</item>
+        <item>Panasonic</item>
+        <item>Sony</item>
+        <item>Fujifilm</item>
+    </array>
+    <array name="brands_cam_sort">
+        <item>All</item>
+        <item>Canon</item>
+        <item>Nikon</item>
+        <item>Panasonic</item>
+        <item>Sony</item>
+        <item>Fujifilm</item>
+    </array>
+    <array name="brands_flash">
+        <item>Canon</item>
+        <item>Nikon</item>
+        <item>Neewer</item>
+        <item>Yongnou</item>
+    </array>
+    <array name="brands_flash_sort">
+        <item>All</item>
+        <item>Canon</item>
+        <item>Nikon</item>
+        <item>Neewer</item>
+        <item>Yongnou</item>
+    </array>
+    <array name="brands_lens">
+        <item>Canon</item>
+        <item>Nikon</item>
+        <item>Sony</item>
+        <item>Sigma</item>
+        <item>Tamron</item>
+    </array>
+    <array name="brands_lens_sort">
+        <item>All</item>
+        <item>Canon</item>
+        <item>Nikon</item>
+        <item>Sony</item>
+        <item>Sigma</item>
+        <item>Tamron</item>
+    </array>
+    <array name="brands_storage">
+        <item>Sandisk</item>
+        <item>Transcend</item>
+        <item>Samsung</item>
+        <item>Strontium</item>
+    </array>
+    <array name="brands_storage_sort">
+        <item>All</item>
+        <item>Sandisk</item>
+        <item>Transcend</item>
+        <item>Samsung</item>
+        <item>Strontium</item>
+    </array>
+    <array name="canon_models">
+        <item>400D</item>
+        <item>200D</item>
+        <item>550D</item>
+        <item>600D</item>
+        <item>750D</item>
+        <item>650D</item>
+        <item>700D</item>
+        <item>1200D</item>
+        <item>1300D</item>
+        <item>70D</item>
+        <item>80D</item>
+        <item>7D Mark 2</item>
+        <item>5D Mark 1</item>
+        <item>5D Mark 2</item>
+        <item>5D Mark 3</item>
+        <item>5D Mark 4</item>
+        <item>1DX Mark 2</item>
+        <item>G7X Mark 2</item>
+        <item>G9X Mark 2</item>
+        <item>SX50</item>
+        <item>SX60</item>
+        <item>SX120</item>
+    </array>
+
+    <array name="cities_sort">
+        <item>All</item>
+        <item>Mumbai</item>
+        <item>Thane</item>
+        <item>Pune</item>
+        <item>Nagpur</item>
+        <item>Nashik</item>
+        <item>Chichwad</item>
+        <item>Dombivali</item>
+        <item>Vasai-Virar</item>
+        <item>Aurangabad</item>
+        <item>Navi Mumbai</item>
+        <item>Bhayandar</item>
+        <item>Bhiwandi</item>
+        <item>Amarawati</item>
+        <item>Nanded</item>
+        <item>Kolhapur</item>
+        <item>Akola</item>
+        <item>Panvel</item>
+        <item>Ulhasnagar</item>
+        <item>Sangali</item>
+        <item>Jalgaon</item>
+        <item>Latur</item>
+        <item>Ahamadnagar</item>
+        <item>Chandrapur</item>
+        <item>Parbhani</item>
+        <item>Malegaon</item>
+        <item>Dhule</item>
+        <item>Thane</item>
+        <item>Pune</item>
+        <item>Nagpur</item>
+        <item>Beed</item>
+        <item>Bhandara</item>
+        <item>Buldhana</item>
+        <item>Gadchiroli</item>
+        <item>Gondia</item>
+        <item>Hingoli</item>
+        <item>Jalana</item>
+        <item>Nandurbar</item>
+        <item>Osmanabad</item>
+        <item>Parabhani</item>
+        <item>Raigad</item>
+        <item>Ratnagiri</item>
+        <item>Sindhudurg</item>
+        <item>Solapur</item>
+        <item>Wardha</item>
+        <item>Washim</item>
+        <item>Yavatmal</item>
+        <item>Palghar</item>
+    </array>
+    <array name="gear_types">
+        <item>All</item>
+        <item>To Buy</item>
+        <item>To Rent</item>
+    </array>
+    <array name="nikon_brands">
+        <item>D850</item>
+        <item>D3100</item>
+        <item>D3200</item>
+        <item>D3300</item>
+        <item>D3400</item>
+        <item>D4</item>
+        <item>D5</item>
+        <item>D500</item>
+        <item>D5100</item>
+        <item>D5200</item>
+        <item>D5300</item>
+        <item>D5600</item>
+        <item>D6</item>
+        <item>D60</item>
+        <item>D610</item>
+        <item>D750</item>
+        <item>D7100</item>
+        <item>D7200</item>
+        <item>D7500</item>
+        <item>D80</item>
+        <item>D810</item>
+        <item>D90</item>
+    </array>
+    <array name="pana_brands">
+        <item>DC-GH5</item>
+        <item>DMC-GH4</item>
+        <item>DMC-FZ300</item>
+        <item>DMW-FL28</item>
+        <item>HC-VX 985</item>
+    </array>
+    <array name="service_type">
+        <item>Wedding Photography</item>
+        <item>Pre Wedding Shoot</item>
+        <item>Fashion Photography(Indoor)</item>
+        <item>Fashion Photography(Outdoor)</item>
+        <item>Occasional Photography</item>
+        <item>Maternity Photography</item>
+        <item>Product Photography</item>
+        <item>Corporate Photography</item>
+        <item>Photoshop / Lightroom</item>
+        <item>Makeup and Dress up</item>
+    </array>
+    <array name="service_type_sort">
+        <item>All</item>
+        <item>Wedding Photography</item>
+        <item>Pre Wedding Shoot</item>
+        <item>Fashion Photography(Indoor)</item>
+        <item>Fashion Photography(Outdoor)</item>
+        <item>Occasional Photography</item>
+        <item>Maternity Photography</item>
+        <item>Product Photography</item>
+        <item>Corporate Photography</item>
+        <item>Photoshop / Lightroom</item>
+        <item>Makeup and Dress up</item>
+    </array>
+    <array name="sony_brands">
+    </array>
+</resources>

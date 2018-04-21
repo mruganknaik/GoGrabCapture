@@ -49,6 +49,50 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520274639402:android:578f610d2bddb352",
+        "android_client_info": {
+          "package_name": "a39.apps.monyabhai.gograbncapture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520274639402-tci0pe3vg0sudtht95ovocmqqfuiovbb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "a39.apps.monyabhai.gograbncapture",
+            "certificate_hash": "36cad6852321c7970e1c30d781a1bd80cb17c7a5"
+          }
+        },
+        {
+          "client_id": "520274639402-s4aqs4gf236p08tcifvvd3of4idaluf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDdr-6QzQY12UF9Bww8bBRp0u0g7gJmSU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520274639402-s4aqs4gf236p08tcifvvd3of4idaluf7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

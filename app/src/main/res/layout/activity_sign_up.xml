@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="a39.apps.monyabhai.gograbcapture.SignUpActivity">
+    android:layout_width="match_parent" android:layout_height="match_parent">
 
     <include
         android:id="@+id/signup_appbar"
-        layout="@layout/appbar_layout" />
-
+        layout="@layout/appbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_signup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginTop="24dp"
         android:backgroundTint="@color/secondaryColor"
         android:paddingLeft="24dp"
@@ -23,68 +22,55 @@
         android:text="@string/send_code"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_verify_layout" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_verify" />
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/txt_phone_layout"
-        android:layout_width="match_parent"
+
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginStart="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:background="@layout/txt_shape"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup_appbar">
+        app:layout_constraintTop_toBottomOf="@+id/signup_appbar" />
 
-        <EditText
-            android:id="@+id/txt_phone"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/phone"
-            android:inputType="phone"
-            android:maxLength="10"
-            android:textColor="@android:color/background_dark"
-            android:textColorHint="@android:color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/signup_appbar" />
-    </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/txt_verify_layout"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/txt_verify"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:visibility="invisible"
+        android:layout_below="@+id/txt_phone"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1.0"
+        android:background="@layout/txt_shape"
+        android:ems="10"
+        android:hint="@string/verification_code"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="10dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_phone_layout">
-
-        <EditText
-            android:id="@+id/txt_verify"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_phone"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="@string/verification_code"
-            android:inputType="number"
-            android:maxLength="6"
-            android:textColor="@android:color/black"
-            android:textColorHint="@android:color/black"
-            android:visibility="visible"
-            tools:layout_editor_absoluteY="11dp" />
-    </android.support.design.widget.TextInputLayout>
+        app:layout_constraintTop_toBottomOf="@+id/txt_phone" />
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
 
     <ProgressBar
         android:id="@+id/progress_verify"
-        style="?android:attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -98,15 +84,12 @@
     <TextView
         android:id="@+id/err_signup_txt"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:textColor="@android:color/holo_red_light"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
         android:textSize="18sp"
         android:textStyle="bold"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
-
-
 </android.support.constraint.ConstraintLayout>

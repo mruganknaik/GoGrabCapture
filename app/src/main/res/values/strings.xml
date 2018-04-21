@@ -79,5 +79,40 @@
     </string-array>
 
     <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="model">Model</string>
+    <string name="model_or_service">Model or Service</string>
+    <string name="description">Description</string>
+    <string name="gears">Gears</string>
+
+
+    <string name="expeience_in_years">Experience (in years)</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="for_rent">For Rent</string>
+    <string name="for_sell">For Sell</string>
+    <string name="added_by">Added By</string>
+    <string name="brand">Brand</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="price">Price</string>
+    <string name="price_day">Price/Day</string>
+    <string name="products">Products</string>
+
+    <string name="purchased_in_year">Purchased In Year</string>
+    <string name="request">Request</string>
+
+
+    <string name="search_menu_title">Search</string>
+    <string name="services">Services</string>
+
+    <string name="status_bar_notification_info_overflow">999+</string>
+
+    <string name="tagline">Place Where Every Phographer Unites....</string>
+    <string name="title">Title</string>
+    <string name="to_buy">To Buy</string>
+    <string name="to_rent">On Rent</string>
+
+    <string name="type">Type</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

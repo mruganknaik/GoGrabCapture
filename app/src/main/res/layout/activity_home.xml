@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="a39.apps.monyabhai.gograbcapture.HomeActivity">
+    android:layout_height="match_parent">
 
     <include
-        android:id="@+id/home_appbar"
+        android:id="@+id/discover_appbar"
         layout="@layout/appbar_layout" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primaryDarkColor"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_item" />
 
     <FrameLayout
         android:id="@+id/main_frame"
@@ -16,23 +26,9 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/main_nav_bar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_appbar">
-
-    </FrameLayout>
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/main_nav_bar"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/primaryDarkColor"
-        app:itemIconTint="@drawable/selector"
-        app:itemTextColor="@drawable/selector"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/nav_item">
-
-    </android.support.design.widget.BottomNavigationView>
-
+        app:layout_constraintTop_toBottomOf="@id/discover_appbar" />
 </android.support.constraint.ConstraintLayout>
